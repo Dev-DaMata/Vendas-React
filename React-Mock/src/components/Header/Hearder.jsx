@@ -1,5 +1,5 @@
 import React from "react";
-import S from "./Hearder.module.css";
+import S from "./Hearder.module.css"; 
 const Hearder = () => {
   return (
     <header className={S.Hearder}>
@@ -9,6 +9,12 @@ const Hearder = () => {
           Todos os produtos desta lista foram selecionados a partir de sua
           navegação. Aproveite!
         </p>
+        <div>
+          <button  className={S.botao}>Conheça a Linx</button>
+          <button  className={S.botao}>Ajude o algorítmo</button>
+          <button  className={S.botao}>Seus produtos</button>
+          <button  className={S.botao}>Conheça a Linx</button>
+        </div>
     </header>
   );
 };
