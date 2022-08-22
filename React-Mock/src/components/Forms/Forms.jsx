@@ -1,8 +1,28 @@
 import React from 'react'
+import { useState } from 'react'
 import Label from '../Label/Label'
 import S from './Forms.module.css'
 
 const Forms = () => {
+  const [nome, setNome] = useState("")
+  const [email, setEmail] = useState("")
+  const [cpf, setCpf] = useState("")
+  const inputName = (e)=>{
+    setNome(e.target.value)
+    console.log(nome);
+  }
+  const inputEmail = (e)=>{
+    setEmail(e.target.value)
+    console.log(email);
+  }
+  const inputCpf = (e)=>{
+    setCpf(e.target.value)
+    console.log(cpf);
+  }
+  const resultadoForms = (e)=>{
+    e.preventDefault()
+    console.log(nome, email, cpf);
+  }
   return (
     <div className={S.pai}>
         <div className={S.texto} >
@@ -12,18 +32,18 @@ const Forms = () => {
         <div className={S.Header}>
             <form action="">
                 <Label texto={"Escreva o seu nome"}/>
-                <input type="text" placeholder='Nome' required autocomplete="off" className={S.campo} /><br/>
+                <input type="text" placeholder='Nome' required className={S.campo} onChange={inputName} /><br/>
                 <Label texto={"Escreva o seu E-mail"}/>
-                <input type="email"  placeholder='E-mail' required autocomplete="off" className={S.campo} /><br/>
+                <input type="email"  placeholder='E-mail' required className={S.campo} onChange={inputEmail} /><br/>
                 <Label texto={"Escreva o seu CPF"}/>
-                <input type="number"  placeholder='CPF' required autocomplete="off" className={S.campo} /><br/>
+                <input type="number"  placeholder='CPF' required className={S.campo} onChange={inputCpf} /><br/>
                 <div className={S.radio}>
                 <Label texto={"Masculino"}/>
                 <input type="radio"></input>
                 <Label texto={"Feminino"}/>
                 <input type="radio"></input>
                 </div>
-                <button>Enviar</button>
+                <button onClick={resultadoForms}>Enviar</button>
             </form>
         </div>
     </div>

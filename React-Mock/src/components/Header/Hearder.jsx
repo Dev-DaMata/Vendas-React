@@ -9,11 +9,11 @@ const Hearder = () => {
           Todos os produtos desta lista foram selecionados a partir de sua
           navegação. Aproveite!
         </p>
-        <div>
+        <div >
           <button  className={S.botao}>Conheça a Linx</button>
           <button  className={S.botao}>Ajude o algorítmo</button>
           <button  className={S.botao}>Seus produtos</button>
-          <button  className={S.botao}>Conheça a Linx</button>
+          <button  className={S.botao}>Compartilhe</button>
         </div>
     </header>
   );

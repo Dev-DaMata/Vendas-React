@@ -1,0 +1,10 @@
+.card{
+    width: 250px;
+}
+.img{
+    width: 150px;
+    border: 1px solid black;
+}
+.button{
+    font-size: 20px;
+}

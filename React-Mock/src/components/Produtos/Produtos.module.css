@@ -1,0 +1,38 @@
+.linha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.hr{
+    width: 600px;
+    color: black;
+    height: 1px;
+}
+.hr2{
+    width: 550px;
+    color: black;
+    height: 1px;
+}
+
+.pai{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsNofinal{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.botaoMostraMais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom: 50px;
+}
