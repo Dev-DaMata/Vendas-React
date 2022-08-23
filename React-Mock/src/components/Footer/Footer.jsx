@@ -21,24 +21,15 @@ const Footer = () => {
   return (
     <div>
         <p className={S.p}>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-        <div className={S.formDoAmigo}>
-            <div>
-            <form  action="">
-                <Label texto={"Nome do seu amigo:"}/>
-                <input type="text" placeholder='Nome' required onChange={inputName} />
-                
+        <form >
+            <div className={S.formDoAmigo}>
+                <Label texto={"Nome do seu amigo"}/>
+                <input type="text" placeholder='Nome' required  /><br/>
+                <Label texto={"E-mail do seu amigo"}/>
+                <input type="email"  placeholder='E-mail' required  /><br/>
+            </div>
+                <button>Enviar</button>
             </form>
-            </div>
-            <div>
-                <form action="">
-                <Label texto={"E-mail:"}/>
-                <input type="email" placeholder='email' required onChange={inputEmail} />
-                </form>
-            </div>
-        </div>
-        <div className={S.botaoDeEnviar}>
-        <button onClick={botaoEnvia} >Enviar agora</button>
-        </div>
         <footer className={S.Hearder}>
         <p>Testando suas habilidades em HTML,</p>
         <p>CSS e JS. Linx Impulse</p>
